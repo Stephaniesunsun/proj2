@@ -1,7 +1,6 @@
 {
-  "name": "proj2",
+  "name": "shopping",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,19 @@
   "license": "ISC",
   "dependencies": {
     "cowsay": "^1.4.0"
-  }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephaniesunsun/proj2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Stephaniesunsun/proj2/issues"
+  },
+  "homepage": "https://github.com/Stephaniesunsun/proj2#readme",
+  "description": ""
 }

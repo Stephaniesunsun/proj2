@@ -1,0 +1,21 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+body{
+    
+    font-family:$ff-r;
+    font-weight:$fw-n;
+    background-color:$dark-blue;
+   // color:rgba($brown,0.8);
+    color:$white;
+}
+
+h1{
+  @include rammetto;
+
+   
+}
+h2{
+    @include questrial;
+}
+

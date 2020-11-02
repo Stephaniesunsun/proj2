@@ -1,0 +1,114 @@
+.welcome{  
+    
+    background-image: url(../img/welcome.jpg);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+  
+    h1{
+        text-align:center;
+        font-size:5vw;
+        color:$dark-blue;
+    }
+    h2{
+        margin:0;
+        padding:2em 0;
+        margin:0.3em 0.5em;
+        span{
+            display: block;
+            font-size: 3.5vw;
+            font-weight:$fw-b;
+        }
+    }
+    
+}
+.banner{
+
+   
+    .nav1{
+        display: flex;
+        justify-content:end;
+        padding:2em 0;
+        a{
+            text-decoration: none;
+            font-size:1.5rem;
+            color:$warm;
+            display: inline-block;
+            margin:0 0.5em;
+            position:relative;
+           
+           &::after{
+               content:attr(data-content);
+               position: absolute;
+               top:0;
+               left:100%;
+               right:0;
+               bottom: 0;
+               transition: left 250ms ease-out;
+               color:$brown;
+               overflow:hidden;
+           }
+        }
+        a:hover::after{
+            left:0;
+        }
+        span{
+            content:'';
+            display: inline-block;
+            height:22px;
+            width: 1px;
+            background-color: $white;
+            
+        }
+        
+    }
+
+    
+}
+
+.nav2{
+    
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color:$brown;
+        display: inline-block;
+        margin: 0 7vw;
+        font-size: 2vw;
+        position: relative;
+        overflow:hidden;
+    
+    &::after{
+        content: attr(data-content);
+        position: absolute;
+        display: inline-block;
+        top:100%;//only invisible when overflow:hidden
+        bottom:0;
+        left:0;
+        right:0;//have to set all 4 positions
+        color: $warm;
+        transition:bottom ease-in-out 500ms;
+       
+    }
+}
+
+    a:hover::after{
+        top:0;
+    }
+    
+}
+
+
+.welcome-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .welcome-text{
+        display: block;
+        padding:2em 0;
+        font-size:3vw;
+    }
+}
+

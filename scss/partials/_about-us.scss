@@ -1,0 +1,30 @@
+.about-us{
+    @include container;
+    overflow:hidden;
+    margin:5em;
+    display: grid;
+    grid-template-columns: minmax(4em,1fr) minmax(4em,1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 3em;
+    h1{
+        color:$warm;
+        grid-row:1/2;
+        margin:0.5em 0;
+        text-align:center;
+        display: block;
+    }
+    p{
+        grid-row:2/3;
+        text-align: center;
+       line-height:1.5em;
+    }
+    h1,p{
+        grid-column: 1/2;
+    }
+    img{
+        object-fit:cover;
+        max-height:33em;
+        grid-column: 2/3;
+        grid-row:1/span 2;
+    }
+}

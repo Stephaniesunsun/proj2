@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Rakkas&family=Rammetto+One&display=swap");
+
+$ff-ro:'Rammetto One',serif;
+$ff-q:'Questrial',serif;
+$ff-r:'Rakkas',serif;
+
+$fw-n:200;
+$fw-b:600;
+
+@mixin rammetto($ls:0.5em,$color:$warm,
+$lh:2.5em,$fs:2em,$tt:uppercase){
+    font-family:$ff-ro;
+    letter-spacing: $ls;
+    color:$color;
+    line-height:$lh;
+    font-size:$fs;
+    text-transform: $tt;
+}
+
+@mixin questrial($ls:0.1em,$color:$brown,
+$fs:2.2vw,$tt:lowercase){
+    font-family:$ff-q;
+    letter-spacing: $ls;
+    color:$color;
+    font-size:$fs;
+    text-transform: $tt;
+    font-weight:$fw-n;
+}
+
+

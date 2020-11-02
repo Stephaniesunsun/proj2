@@ -1,0 +1,7 @@
+@mixin container($width:90%, $max-width:80em){ //can customize and be used within all div
+    width:$width;
+    margin:0 auto;//make it to the center
+    max-width: $max-width;
+} 
+
+
