@@ -4,4 +4,10 @@
     max-width: $max-width;
 } 
 
+@mixin media($width:898px){
+    @media(max-width: $width){
+        @content;
+    }
+}
+
 

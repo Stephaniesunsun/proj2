@@ -6,6 +6,13 @@
     grid-template-columns: minmax(4em,1fr) minmax(4em,1fr);
     grid-template-rows: 1fr 2fr;
     grid-column-gap: 3em;
+    @include media{
+        display: flex;
+        margin:5em auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     h1{
         color:$warm;
         grid-row:1/2;
@@ -23,7 +30,8 @@
     }
     img{
         object-fit:cover;
-        max-height:33em;
+        max-height:35em;
+        min-width:10em;
         grid-column: 2/3;
         grid-row:1/span 2;
     }
